@@ -1,12 +1,74 @@
-<!doctype html>
+<!doctype html> // Define que estamos usando HTML 5
 <html lang="pt-BR">
+  // Define o idioma da página
   <head>
     <meta charset="UTF-8" />
+    // Permite acentuação correta
     <link rel="icon" type="image/svg+xml" href="/javascript.svg" />
+    // icone da aba do navegador
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    // Responsividade
     <title>Aluno Online</title>
+    // titulo da pagina
   </head>
   <body>
+    <aside>
+      <header>
+        <h1>Aluno Online</h1>
+      </header>
+
+      <nav aria-label="Menu principal">
+        <ul>
+          <li><a href="#">Dashboard</a></li>
+          <li><a href="#">Notas</a></li>
+          <li><a href="#">Faltas</a></li>
+          <li><a href="#">Boletos</a></li>
+          <li><a href="#">Requerimentos</a></li>
+          <li><a href="#">Sair</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main>
+      <header>
+        <h2>Olá, Aluno!</h2>
+        <p>Avatar do usuário</p>
+      </header>
+
+      <section aria-labelledby="titulo-dashboard">
+        <header>
+          <h2 id="titulo-dashboard">Bem-vindo ao portal do aluno</h2>
+        </header>
+
+        <section aria-labelledby="titulo-avisos">
+          <h3 id="titulo-avisos">Mural de Avisos</h3>
+          <ul>
+            <li>Inscrição para o projeto de extensão</li>
+            <li>Eleição para representante de turma</li>
+          </ul>
+        </section>
+
+        <section aria-labelledby="titulo-calendario">
+          <h3 id="titulo-calendario">Calendário Acadêmico</h3>
+          <ul>
+            <li>23/02 - Início do período letivo 2026-1</li>
+            <li>25/04 - Prazo final para aplicação da P1</li>
+            <li>23/06 - Prazo final para aplicação da P2</li>
+            <li>04/07 - Fim do período letivo 2026-1</li>
+          </ul>
+        </section>
+
+        <section aria-labelledby="titulo-disciplinas">
+          <h3 id="titulo-disciplinas">Minhas Disciplinas</h3>
+          <ul>
+            <li>Bancos de Dados I (HMDC253)</li>
+            <li>Estrutura de Dados (MDC127)</li>
+            <li>Tecnologias Web (HMDC251)</li>
+          </ul>
+        </section>
+      </section>
+    </main>
+
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>

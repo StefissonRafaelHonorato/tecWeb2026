@@ -1,23 +1,8 @@
-export default {
-  appType: "mpa",
-  // Configuração para Multi-Page Application (MPA)
-  build: {
-    rollupOptions: {
-      input: {
-        main: "index.html",
-        login: "login.html",
-      },
-    },
-  },
-  // Configuração do Servidor para Docker  
+import { defineConfig } from "vite";
+
+export default defineConfig({
   server: {
-    host: "0.0.0.0",
+    host: true,
     port: 5173,
-    watch: {
-      usePolling: true,
-    },
-    hmr: {
-      clientPort: 5173,
-    },
   },
-};
+});
